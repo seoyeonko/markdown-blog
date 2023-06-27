@@ -25,7 +25,12 @@ export default function Post(props: any) {
 
   return (
     <div>
-      <h1 className="text-2xl text-violet-600">{post.data.title}</h1>
+      <div className="my-12">
+        <h1 className="text-2xl text-slate-700 font-bold text-center">
+          {post.data.title}
+        </h1>
+        <p className="text-slate-400 mt-2">{post.data.date}</p>
+      </div>
       <article className="prose lg:prose-xl">
         <Markdown>{post.content}</Markdown>
       </article>
