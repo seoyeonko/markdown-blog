@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import Head from './head';
 
 export default function RootLayout({
@@ -8,7 +9,9 @@ export default function RootLayout({
   const header = (
     <header>
       <div>
-        <h1>Sean&rsquo;s Blog</h1>
+        <Link href="/">
+          <h1>Sean&rsquo;s Blog</h1>
+        </Link>
         <p>🤟🏻 Welcome to me tech blog! 💻</p>
         <br />
       </div>
